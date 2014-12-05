@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+
+   
+        <div onclick="change()" id="hi">LEAVE ME ALONE</div>
+
+
+        <script>
+            // Set the variables, and then tell console log what to display.
+             var name = "Chagit"
+            
+            var y = 5;
+            var x = 6;
+
+
+            var name = "Steve ";
+            var job = "worked in Kinkos in ";
+            var year = "2000"
+
+            var completeSentence = name + job + year;
+                console.log(completeSentence);
+
+             
+            // this alert will appear when the page loads  
+            alert("Good morning sunshine");
+           
+
+            
+             //these are different types of arrays using var
+
+            ["kitty", "kiki", "kathy"];
+            [12, 13, 14, "math"];
+
+            var mstates = ["maine", "maryland"];
+            var nstates= ["new york", "new hampshire"];
+
+            var states = [["maine", "maryland"],["new york","new hampshire"]];
+            console.log(states[0][1]);
+
+            
+            // testing
+            console.log("chagit" === "hagit");
+            console.log("turst" === "trust");
+
+            if (19>9){
+                console.log("You are a genius!");
+            }else{
+                console.log("not correct");
+            }
+           
+           //functions
+
+           function alertName (somePerson){
+            return alert(somePerson);
+           }
+
+           alertName("Master");
+
+            function tellMeMyname(name){
+                alert(name);
+               }
+            tellMeMyname("chagit");
+             noArgFunction();
+
+
+            //this is a function of change, need to have a div in the HTML code with the same id, in the div also need the onclick="change()". Then add in the function change in the script.
+            function change(){
+                document.getElementById('hi').innerHTML = "HERE WE GO";
+             }
+
+
+
+        </script>
+
+    </body>
+</html>
